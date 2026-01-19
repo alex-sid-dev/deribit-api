@@ -30,7 +30,7 @@ Backend-приложение для получения и хранения це�
 ### 1. Клонируем репозиторий
 
 ```bash
-git clone <repository-url>
+  git clone <repository-url>
 cd deribit-api
 ```
 
@@ -39,7 +39,7 @@ cd deribit-api
 Скопируйте `.env.example` в `.env`:
 
 ```bash
-cp .env.example .env
+  cp .env.example .env
 ```
 
 Или создайте `.env` вручную:
@@ -60,7 +60,7 @@ SERVER_PORT=8000
 ### 3. Запускаем через Docker Compose
 
 ```bash
-docker-compose up -d
+  docker-compose up -d
 ```
 
 Запустятся 5 сервисов:
@@ -149,7 +149,7 @@ GET /api/v1/prices/by-date?ticker=BTC_USD&date=2026-01-16
 ## Тесты
 
 ```bash
-uv sync --extra test
+  uv sync --extra test
 uv run pytest
 ```
 
@@ -252,12 +252,12 @@ Pydantic схемы для валидации запросов/ответов. �
 
 Создать новую:
 ```bash
-uv run alembic revision --autogenerate -m "описание"
+  uv run alembic revision --autogenerate -m "описание"
 ```
 
 Применить:
 ```bash
-uv run alembic upgrade head
+  uv run alembic upgrade head
 ```
 
 ### Локальный запуск (без Docker)
