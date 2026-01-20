@@ -21,5 +21,3 @@ RUN chmod +x /app/scripts/celery_entrypoint.sh
 ENTRYPOINT ["/app/scripts/entrypoint.sh"]
 
 CMD ["uv", "run", "uvicorn", "src.main:app", "--factory", "--host", "0.0.0.0", "--port", "5000"]
-
-
